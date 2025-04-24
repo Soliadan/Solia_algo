@@ -35,11 +35,14 @@ def check_distribution(cities, storages, pipelines):
 
     return result  # Повертаємо список сховищ з недосяжними містами або пустий список
 
-# Тестові дані
-cities = ['Львів', 'Стрий', 'Долина']
-storages = ['Сховище_1', 'Сховище_2']
-pipelines = [['Львів', 'Стрий'], ['Долина', 'Львів'], ['Сховище_1', 'Долина']]
+def main():
+    # Тестові дані
+    cities = ['Львів', 'Стрий', 'Долина']
+    storages = ['Сховище_1', 'Сховище_2']
+    pipelines = [['Львів', 'Стрий'], ['Долина', 'Львів'], ['Сховище_1', 'Долина']]
 
-# Виклик функції і виведення результату
-output = check_distribution(cities, storages, pipelines)
-print(output)
+    # Виклик функції і виведення результату
+    output = check_distribution(cities, storages, pipelines)
+    print(output)
+if __name__ == '__main__':
+    main()
