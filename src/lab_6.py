@@ -44,5 +44,6 @@ def main():
     # Виклик функції і виведення результату
     output = check_distribution(cities, storages, pipelines)
     print(output)
+    
 if __name__ == '__main__':
     main()
