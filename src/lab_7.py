@@ -39,7 +39,7 @@ def trie_from_patterns(patterns: list[str]) -> TrieTree:
         trie.insert(word)
     return trie
 
-if __name__= "__main__":
+if __name__ == "__main__":
     patterns = ["apple", "ape", "apex", "bat", "ball"]
 
     trie = trie_from_patterns(patterns)
